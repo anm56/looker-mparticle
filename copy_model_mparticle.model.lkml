@@ -31,7 +31,7 @@ explore: iosspksubscriptioneventreports {}
 
 explore: iosspksubscriptionreports {}
 
-#philip from Looker support's change
+
 explore:rawevents  {
   join: users {
     sql_on: ${rawevents.mparticle_user_id} = ${users.mparticle_user_id} ;;
