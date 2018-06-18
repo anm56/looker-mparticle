@@ -307,4 +307,3 @@
       point_style: none
       interpolation: linear
       x_axis_label: Date
-

@@ -1,6 +1,6 @@
 view: rawevents {
   ## change to relevant schema name for block implementation
-  sql_table_name: app_191.eventsview ;;
+  sql_table_name: mparticle.eventsview ;;
 
   dimension: app_id {
     type: number
@@ -21,7 +21,7 @@ view: rawevents {
     type: time
     datatype: epoch
     timeframes: [time, date, week, month, year]
-    sql: (${TABLE}.firstseentimestamp::bigint) / 1000 ;;
+    sql: (${TABLE}.firstseentimestamp::bigint) / 1000;;
   }
 
   dimension: app_name {
@@ -205,7 +205,8 @@ view: rawevents {
   dimension: platform {
     sql: ${TABLE}.platform ;;
     bypass_suggest_restrictions: yes
-  }
+    }
+
 
   dimension: region_code {
     sql: ${TABLE}.regioncode ;;

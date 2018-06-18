@@ -1,4 +1,4 @@
-connection: "qa_redshift"
+connection: "analytics-001-redshift"
 
 # include all the views
 include: "*.view"
