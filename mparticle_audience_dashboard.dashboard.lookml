@@ -36,7 +36,7 @@
     - name: audience_size_by_day
       title: Audience Size by Day
       type: looker_area
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       dimensions: [rawevents.event_date]
       measures: [rawevents.unique_user_count]
@@ -78,7 +78,7 @@
     - name: audience_lift
       title: Audience Lift % (comparing users in the audience vs not in the audience)
       type: looker_column
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date
@@ -142,7 +142,7 @@
     - name: daily_arpu_by_audience
       title: Daily ARPU by Audience Membership
       type: looker_area
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date
@@ -182,7 +182,7 @@
     - name: daily_sessions_per_user
       title: Daily Sessions Per User by Audience Membership
       type: looker_area
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date
@@ -226,7 +226,7 @@
     - name: daily_avg_session_length
       title: Daily Avg Session Length by Audience Membership
       type: looker_line
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date
@@ -266,7 +266,7 @@
     - name: daily_time_spent_in_app
       title: Daily Time Spent In App Per User by Audience Membership
       type: looker_line
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date

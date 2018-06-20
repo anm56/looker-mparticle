@@ -61,7 +61,7 @@
   - name: total_revenue
     title: Total Revenue
     type: single_value
-    model: mparticle_looker_blocks
+    model: copy_model_mparticle
     explore: rawevents
     measures: [rawevents.revenue]
     listen:
@@ -77,7 +77,7 @@
   - name: unique_user_count
     title: Unique User Count
     type: single_value
-    model: mparticle_looker_blocks
+    model: copy_model_mparticle
     explore: rawevents
     measures: [rawevents.unique_user_count]
     listen:
@@ -93,7 +93,7 @@
   - name: arpu
     title: ARPU
     type: single_value
-    model: mparticle_looker_blocks
+    model: copy_model_mparticle
     explore: rawevents
     measures: [rawevents.arpu]
     listen:
@@ -114,7 +114,7 @@
       platform: rawevents.platform
       is_debug_data: rawevents.is_debug
     type: looker_column
-    model: mparticle_looker_blocks
+    model: copy_model_mparticle
     explore: rawevents
     dimensions: [rawevents.attribution_publisher_name]
     measures: [rawevents.revenue, rawevents.arpu]
@@ -157,7 +157,7 @@
       platform: rawevents.platform
       is_debug_data: rawevents.is_debug
     type: looker_column
-    model: mparticle_looker_blocks
+    model: copy_model_mparticle
     explore: rawevents
     dimensions: [rawevents.hour]
     measures: [rawevents.revenue, rawevents.arpu]
@@ -200,7 +200,7 @@
       platform: rawevents.platform
       is_debug_data: rawevents.is_debug
     type: looker_column
-    model: mparticle_looker_blocks
+    model: copy_model_mparticle
     explore: rawevents
     dimensions: [rawevents.event_date]
     measures: [rawevents.revenue, rawevents.arpu]
@@ -239,7 +239,7 @@
   - name: Purchase Funnel Analytics by App Platform
     title: Purchase Funnel Analytics by App Platform
     type: looker_column
-    model: mparticle_looker_blocks
+    model: copy_model_mparticle
     explore: rawevents
     measures: [funnel.event_1_uu_count, funnel.event_2_uu_count, funnel.event_3_uu_count,
       funnel.event_4_uu_count, funnel.event_5_uu_count]
