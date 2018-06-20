@@ -30,7 +30,7 @@
       type: field_filter
       explore: rawevents
       field: rawevents.audience_membership
-      default_value: '%"1234"%' ## when using this dashboard, users need to change the value to relevant audience ID for audience analytics
+
 
   elements:
     - name: audience_size_by_day
