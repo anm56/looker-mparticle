@@ -63,7 +63,7 @@
     - name: session_count
       title: Session Count
       type: single_value
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       measures: [rawevents.session_count]
       listen:
@@ -79,7 +79,7 @@
     - name: average_session_length
       title: Average Session Length (Seconds)
       type: single_value
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       measures: [rawevents.avg_session_length]
       listen:
@@ -95,7 +95,7 @@
     - name: total_installs
       title: Total Installs
       type: single_value
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       measures: [rawevents.install_count]
       listen:
@@ -111,7 +111,7 @@
     - name: uu by App Platform
       title: Active Users by App Platform
       type: looker_column
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       dimensions: [rawevents.app_name_platform]
       measures: [rawevents.unique_user_count]
@@ -152,7 +152,7 @@
     - name: session_cnt_breakdown
       title: Session Count Breakdown by OS Version
       type: looker_column
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date
@@ -197,7 +197,7 @@
     - name: Dau by app Platform
       title: DAU by App Platform
       type: looker_area
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date
@@ -237,7 +237,7 @@
     - name: Daily Avg Session Length by App Platform
       title: Daily Avg Session Length by App Platform
       type: looker_line
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date
@@ -275,7 +275,7 @@
     - name: daily_time_spent_in_app
       title: Daily Time Spent In App Per User by App
       type: looker_line
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date
@@ -317,7 +317,7 @@
     - name: session_cnt_by_hour
       title: Session Count by Hour of Day by App
       type: looker_area
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date
@@ -357,7 +357,7 @@
     - name: Daily Installs by App Platform
       title: Daily Installs by App Platform
       type: looker_area
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date
@@ -395,7 +395,7 @@
     - name: Daily Revenue by App Platform
       title: Daily Revenue by App Platform
       type: looker_area
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date
@@ -434,7 +434,7 @@
     - name: Daily Session Count by App Platform
       title: Daily Session Count by App Platform
       type: looker_area
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date
@@ -472,7 +472,7 @@
     - name: Top 50 Event Name Stats
       title: Top 50 Event Name Stats
       type: table
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date
@@ -513,7 +513,7 @@
     - name: Funnel Analytics by App Platform
       title: Funnel Analytics by App Platform
       type: looker_column
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       measures: [funnel.event_1_uu_count, funnel.event_2_uu_count, funnel.event_3_uu_count,
         funnel.event_4_uu_count]
@@ -559,7 +559,7 @@
     - name: user_retention
       title: User Retention by Attribution Source
       type: looker_line
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date

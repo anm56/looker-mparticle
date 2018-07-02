@@ -13,25 +13,6 @@ connection: "analytics-001-redshift"
 
 # persist_with: copy_model_mparticle_default_datagroup
 
-# explore: ioshomerfinancialreports {}
-
-# explore: ioshomersalesreports {}
-
-# explore: ioshomersubscriptioneventreports {}
-
-# explore: ioshomersubscriptioneventreports_test_as_root_2 {}
-
-# explore: ioshomersubscriptionreports {}
-
-# explore: iosspkfinancialreports {}
-
-# explore: iosspksalesreports {}
-
-# explore: iosspksubscriptioneventreports {}
-
-# explore: iosspksubscriptionreports {}
-
-
 # explore:rawevents  {
 #   join: users {
 #     sql_on: ${rawevents.mparticle_user_id} = ${users.mparticle_user_id} ;;

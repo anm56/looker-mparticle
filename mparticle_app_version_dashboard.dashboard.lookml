@@ -25,7 +25,7 @@
       type: field_filter
       explore: rawevents
       field: rawevents.platform
-      default_value: Android
+      default_value: iOS
 
     - name: is_debug_data
       type: field_filter
@@ -37,7 +37,7 @@
     - name: Total Sessions by App Version
       title: Total Sessions by App Version
       type: looker_column
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date
@@ -70,7 +70,7 @@
     - name: Daily Sessions by App Version
       title: Daily Sessions by App Version
       type: looker_line
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date
@@ -106,7 +106,7 @@
     - name: Daily Avg Session Length by App Version
       title: Daily Avg Session Length by App Version
       type: looker_line
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date
@@ -142,7 +142,7 @@
     - name: Daily ARPU by App Version
       title: Daily ARPU by App Version
       type: looker_line
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date
@@ -178,7 +178,7 @@
     - name: user_retention
       title: User Retention by App Version at Install
       type: looker_line
-      model: mparticle_looker_blocks
+      model: copy_model_mparticle
       explore: rawevents
       listen:
         date: rawevents.event_date
