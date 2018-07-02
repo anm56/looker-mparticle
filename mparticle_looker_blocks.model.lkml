@@ -1,9 +1,9 @@
 connection: "analytics-001-redshift"
 
-# include all the views
+# # include all the views
 include: "*.view"
 
-# include all the dashboards
+# # include all the dashboards
 include: "*.dashboard"
 
 explore: rawevents {
